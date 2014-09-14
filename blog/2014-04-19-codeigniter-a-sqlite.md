@@ -22,16 +22,17 @@ Tak jak mysql ma swojego phpMyadmin albo adminera, tak i sqlite ma swojego manag
 Proces tworzenia tabel jest podobny do tego z phpMyadmin, ale składnia sql trochę się różni. Przyjrzyjmy się tym różnicom na podstawie tabeli ci_sessions. W mysql tabela wygląda tak:
 
     CREATE TABLE IF NOT EXISTS  `ci_sessions` (
-    session_id varchar(40) DEFAULT '0' NOT NULL,
-    ip_address varchar(45) DEFAULT '0' NOT NULL,
-    user_agent varchar(120) NOT NULL,
-    last_activity int(10) unsigned DEFAULT 0 NOT NULL,
-    user_data text NOT NULL,
+    	session_id varchar(40) DEFAULT '0' NOT NULL,
+    	ip_address varchar(45) DEFAULT '0' NOT NULL,
+    	user_agent varchar(120) NOT NULL,
+    	last_activity int(10) unsigned DEFAULT 0 NOT NULL,
+    	user_data text NOT NULL,
     PRIMARY KEY (session_id),
     KEY `last_activity_idx` (`last_activity`)
     );
 
 Z kolei w sqlite sprawy mają się następująco:
+    
     CREATE TABLE "ci_sessions" (
 	"session_id" VARCHAR PRIMARY KEY  NOT NULL DEFAULT 0, 
 	"ip_address" VARCHAR NOT NULL  DEFAULT 0, 
@@ -47,8 +48,8 @@ Mniej tu szczegółów (nie trzeba uściślać ile znaków posiada typ varchar),
 Inne są funkcje daty i czasu. Często korzystając z pól typu datetime potrzebujemy np. osobno miesiąca, osobno roku, żeby dla przykładu wyświetlić podsumowanie wpisów w postaci archiwum:
 
     SELECT 
-    strftime('%Y',created_at) AS YEAR, 
-     strftime('%m',created_at) AS MONTH,
+    	strftime('%Y',created_at) AS YEAR, 
+    	strftime('%m',created_at) AS MONTH,
     COUNT(*) AS TOTAL 
     FROM articles
     GROUP BY YEAR, MONTH
