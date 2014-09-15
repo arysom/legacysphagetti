@@ -1,5 +1,3 @@
-#codeigniter a sqlite
-
 Z pomocą kochającym małe strony z szybkim startem przychodzi sqlite. Nie ma może tylu możliwości co mysql, ale można stworzyć strukturę, sprawdzić działanie i ominąć etap zakładania  bazy danych poprzez interfejs cpanel'u na serwerze. Synchronizacja między stronami lokalną i zdalną może sprowadzać się do skopiowania pliku.
 
 <!-- pagebreak -->
