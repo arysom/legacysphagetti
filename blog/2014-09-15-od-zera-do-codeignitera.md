@@ -16,12 +16,31 @@ Niewiele jest pozycji, jednak zawierają one pewną liczbę zagadnień do omówi
 
 ##Edytor tekstu
 
+Tworzenie stron to praca z tekstem. Trzeba mieć świadomość, z czego zbudowana jest strona, znać podstawową strukturę, i wiedzieć za co odpowiedzialne są podstawowe tagi. Aby pisanie było przyjemną czynnością warto oswoić się z jakimś edytorem tekstów, dowiedzieć się, jak poruszać się między plikami projektu i zapoznać się ze skrótami klawiszowymi.
+
+Przykładowym przedstawicielem "lekkich" edytorów jest notepad++, który pod płaszczykiem minimalnego interfejsu jest pełnoprawnym środowiskiem developerskim. Inne programy to np. ecplise i netbeans, oraz vim.
+
+Dla tych, których praca z kodem na początku przeraża są edytory wizualne, które za pomocą paru kliknięć myszy pozwalają na tworzenie stron. I tutaj wybór jest duży: pajączek, zajączek, wyswig builder, free html editor. Istnieją również duże programy komercyjne, jednak korzystanie z nich kosztuje.
+
 ##Przeglądarka
+
+W prapoczątkach pisze się HTML w pliku np. notatnikiem i sprawdza się, jaki wpływ wywierają nasze zmiany w tekście na wygląd strony www. Zapisujesz, wchodzisz do przeglądarki, odświeżasz itd. Wszystko co zrobimy, będziemy wyświetlać w przeglądarce. Jest ich wiele. Na dodatek nasze strony nie zawsze w każdej z nich wyglądają tak samo. Główni gracze w tej kategorii to : Firefox, Chrome oraz Internet explorer.
 
 ##Serwer lokalny
 
-Na tym etapie można zainstalować środowisko developerskie, które pozwoli na działanie aplikacji w php na Twoim komputerze. Jednym z programów zawierających wszystko, co potrzebne na start, jest [xampp](http://apachefriends.org). Zawiera on w pakiecie serwer apache, język PHP i serwer bazy danych - MySql, oraz program phpMyAdmin, który udostępnia interfejs do tworzenia potrzebnych struktur w przyjazny, wizualny sposób.
+Samo pisanie HTML, projektowanie CSS jest zabawne, ale jeśli już interesujesz się PHP (i Codeigniterem) i zależy ci na budowaniu dynamicznych stron, potrzebny będzie serwer. Na tym etapie możesz zainstalować środowisko developerskie, które pozwoli na działanie aplikacji w php na Twoim komputerze. Jednym z programów zawierających wszystko, co potrzebne na start, jest [xampp](http://apachefriends.org). Zawiera on w pakiecie serwer apache, język PHP i serwer bazy danych - MySql, oraz program phpMyAdmin, który udostępnia interfejs do tworzenia potrzebnych struktur w przyjazny, wizualny sposób. Istnieje również wiele innych programów, które oferują podobne lub trochę inne możliwości niż xampp: zwamp, uniserwer, wamp, czy polski krasnal.
 
-Po przejściu procesu instalacji możemy wpisać...
+Po przejściu procesu instalacji możemy wpisać w przeglądarce adres 'localhost' i zobaczyć zawartość katalogu htdocs znajdującego się w ścieżce programu xampp. Czasami to miejsce może znajdować się dość głęboko w strukturze katalogów, np gdy instalujesz program na pulpicie (c:\users\gosc\desktop\xampp\htdocs). Jednak katalog stron lokalnych może znajdować się w innym miejscu. Wszystko zależy od konfiguracji pliku httpd-vhosts.conf. Ale po kolei.
+
+Do uruchomienia strony PHP potrzebna będzie edycja dwóch plików.  Wspomnianego httpd-vhosts.conf oraz hosts(po prostu hosts, bez rozszerzenia), który znajduje się zazwyczaj w c:\windows\system32\drivers\etc. 
+
+###hosts
+
+To plik odpowiedzialny za przekierowanie żądań stron na adres znajdujący się w komputerze użytkownika. W przypadku gdy pracujemy nad stroną lokalnie, czyli na naszym sprzęcie, jest to kluczowa sprawa. Zazwyczaj jego zawartość wygląda mniej więcej tak:
+
+	# Komentarz do pliku hosts (np. opis budowy pliku)
+	127.0.0.1  localhost loopback
+	::1        localhost
+
 
 c.d.n.
