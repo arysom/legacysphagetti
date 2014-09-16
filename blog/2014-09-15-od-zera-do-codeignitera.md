@@ -16,19 +16,22 @@ Niewiele jest pozycji, jednak zawierają one pewną liczbę zagadnień do omówi
 
 ##Edytor tekstu
 
-Tworzenie stron to praca z tekstem. Trzeba mieć świadomość, z czego zbudowana jest strona, znać podstawową strukturę, i wiedzieć za co odpowiedzialne są podstawowe tagi. Aby pisanie było przyjemną czynnością warto oswoić się z jakimś edytorem tekstów, dowiedzieć się, jak poruszać się między plikami projektu i zapoznać się ze skrótami klawiszowymi.
+Tworzenie stron to praca z tekstem. Trzeba mieć świadomość, z czego zbudowana jest strona, znać podstawową strukturę, i wiedzieć za co odpowiedzialne są podstawowe tagi. Aby pisanie było przyjemną czynnością warto oswoić się z jakimś edytorem tekstów, dowiedzieć się, jak poruszać się między plikami projektu i zapoznać się ze skrótami klawiszowymi, a także poszukać funkcji autouzupełniania kodu.
 
 Przykładowym przedstawicielem "lekkich" edytorów jest notepad++, który pod płaszczykiem minimalnego interfejsu jest pełnoprawnym środowiskiem developerskim. Inne programy to np. ecplise i netbeans, oraz vim.
 
-Dla tych, których praca z kodem na początku przeraża są edytory wizualne, które za pomocą paru kliknięć myszy pozwalają na tworzenie stron. I tutaj wybór jest duży: pajączek, zajączek, wyswig builder, free html editor. Istnieją również duże programy komercyjne, jednak korzystanie z nich kosztuje.
+Jeśli już pracujesz z codeigniterem - edytory wizualne niekoniecznie będą się nadawały.
+
 
 ##Przeglądarka
 
-W prapoczątkach pisze się HTML w pliku np. notatnikiem i sprawdza się, jaki wpływ wywierają nasze zmiany w tekście na wygląd strony www. Zapisujesz, wchodzisz do przeglądarki, odświeżasz itd. Wszystko co zrobimy, będziemy wyświetlać w przeglądarce. Jest ich wiele. Na dodatek nasze strony nie zawsze w każdej z nich wyglądają tak samo. Główni gracze w tej kategorii to : Firefox, Chrome oraz Internet explorer.
+Wszystko co zrobimy, będziemy wyświetlać w przeglądarce. Jest ich wiele. Na dodatek nasze strony nie zawsze w każdej z nich wyglądają tak samo. Główni gracze w tej kategorii to : Firefox, Chrome oraz Internet explorer. 
+
+Warto dozbroić swoją przeglądarkę do 
 
 ##Serwer lokalny
 
-Samo pisanie HTML, projektowanie CSS jest zabawne, ale jeśli już interesujesz się PHP (i Codeigniterem) i zależy ci na budowaniu dynamicznych stron, potrzebny będzie serwer. Na tym etapie możesz zainstalować środowisko developerskie, które pozwoli na działanie aplikacji w php na Twoim komputerze. Jednym z programów zawierających wszystko, co potrzebne na start, jest [xampp](http://apachefriends.org). Zawiera on w pakiecie serwer apache, język PHP i serwer bazy danych - MySql, oraz program phpMyAdmin, który udostępnia interfejs do tworzenia potrzebnych struktur w przyjazny, wizualny sposób. Istnieje również wiele innych programów, które oferują podobne lub trochę inne możliwości niż xampp: zwamp, uniserwer, wamp, czy polski krasnal.
+Na tym etapie możesz zainstalować środowisko developerskie, które pozwoli na działanie aplikacji w php na Twoim komputerze. Jednym z programów zawierających wszystko, co potrzebne na start, jest [xampp](http://apachefriends.org). Zawiera on w pakiecie serwer apache, język PHP i serwer bazy danych - MySql, oraz program phpMyAdmin, który udostępnia interfejs do tworzenia potrzebnych struktur w przyjazny, wizualny sposób. Istnieje również wiele innych programów, które oferują podobne lub trochę inne możliwości niż xampp: zwamp, uniserwer, wamp, czy polski krasnal.
 
 Po przejściu procesu instalacji możemy wpisać w przeglądarce adres 'localhost' i zobaczyć zawartość katalogu htdocs znajdującego się w ścieżce programu xampp. Czasami to miejsce może znajdować się dość głęboko w strukturze katalogów, np gdy instalujesz program na pulpicie (c:\users\gosc\desktop\xampp\htdocs). Jednak katalog stron lokalnych może znajdować się w innym miejscu. Wszystko zależy od konfiguracji pliku httpd-vhosts.conf. Ale po kolei.
 
