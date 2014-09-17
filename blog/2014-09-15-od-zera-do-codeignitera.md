@@ -45,5 +45,17 @@ To plik odpowiedzialny za przekierowanie żądań stron na adres znajdujący si�
 	127.0.0.1  localhost loopback
 	::1        localhost
 
+Następnym krokiem będzie dodanie naszego lokalnego adresu. Niekoniecznie musi to być adres taki sam jak strona, która ma się znaleźć w internecie. Dodajmy na końcu wymyślony adres lub wiele adresów. Dla rozróżnienia ze stronami z internetu proponuję dodać końcówkę .local.
+
+	# Komentarz do pliku hosts (np. opis budowy pliku)
+	127.0.0.1  localhost loopback
+	::1        localhost
+        127.0.0.1 cibase.local  #ci base od codeigniter base
+        127.0.0.1 cibase2.local #druga strona na ci
+        127.0.0.5 shopping.local #jakas inna aplikacja
+ 
+W ostatniej linijce dla odmiany modyfikujemy ostatnią cyfrę adresu, żeby odróżnić adresy pod względem ip, takie postępowanie przydaje się np. gdy potrzebny jest adres zwrotny w aplikacji wykorzystującej płatności online. Następnie modyfikujemy plik vhosts.
+
+###vhosts
 
 c.d.n.
